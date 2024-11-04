@@ -6,6 +6,7 @@ import com.backend.MyDelivery.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 @CrossOrigin
@@ -19,5 +20,10 @@ public class MenuController {
     @PostMapping("/saveMenu")
     public String postMenu(@RequestBody  Menu menu) throws ExecutionException, InterruptedException {
         return menuService.saveMenu(menu);
+    }
+
+    @GetMapping("/getAllMenu")
+    public List<Menu> getAllMenu() throws ExecutionException, InterruptedException {
+        return menuService.getMenu();
     }
 }
