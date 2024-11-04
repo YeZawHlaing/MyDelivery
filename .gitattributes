@@ -1,2 +1,4 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+
+src/main/resources/json/nutrition-6c8ab-firebase-adminsdk-d26ze-cdb40b78b9.json filter=git-crypt diff=git-crypt
